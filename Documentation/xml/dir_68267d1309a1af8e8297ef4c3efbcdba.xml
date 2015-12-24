@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="face__detect_8cpp">face_detect.cpp</innerfile>
+    <innerfile refid="image__publish_8cpp">image_publish.cpp</innerfile>
+    <innerfile refid="imgsubcriber_8cpp">imgsubcriber.cpp</innerfile>
+    <innerfile refid="webcam__video__show_8cpp">webcam_video_show.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/gokul/catkin_ws/src/face_detection/src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="face__detect_8cpp" kind="file">
+    <compoundname>face_detect.cpp</compoundname>
+    <includes local="no">ros/ros.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">cv_bridge/cv_bridge.h</includes>
+    <includes local="no">sensor_msgs/image_encodings.h</includes>
+    <includes local="no">image_transport/image_transport.h</includes>
+    <includes local="no">opencv2/objdetect/objdetect.hpp</includes>
+    <includes local="no">opencv2/imgproc/imgproc.hpp</includes>
+    <includes local="no">opencv2/highgui/highgui.hpp</includes>
+    <incdepgraph>
+      <node id="37">
+        <label>image_transport/image_transport.h</label>
+      </node>
+      <node id="35">
+        <label>cv_bridge/cv_bridge.h</label>
+      </node>
+      <node id="31">
+        <label>src/face_detect.cpp</label>
+        <link refid="face_detect.cpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>sensor_msgs/image_encodings.h</label>
+      </node>
+      <node id="39">
+        <label>opencv2/imgproc/imgproc.hpp</label>
+      </node>
+      <node id="38">
+        <label>opencv2/objdetect/objdetect.hpp</label>
+      </node>
+      <node id="32">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="40">
+        <label>opencv2/highgui/highgui.hpp</label>
+      </node>
+      <node id="33">
+        <label>iostream</label>
+      </node>
+      <node id="34">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <innernamespace refid="namespacecv">cv</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="face__detect_8cpp_1aa3018a2730fde05a0032471af5d5dff2" prot="public" static="no" mutable="no">
+        <type>image_transport::Publisher</type>
+        <definition>image_transport::Publisher pub</definition>
+        <argsstring></argsstring>
+        <name>pub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/gokul/catkin_ws/src/face_detection/src/face_detect.cpp" line="25" column="1" bodyfile="/home/gokul/catkin_ws/src/face_detection/src/face_detect.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="face__detect_8cpp_1ac44a6f7253ef9bf766726a7f4e4d1076" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CascadeClassifier</type>
+        <definition>CascadeClassifier face_cascade</definition>
+        <argsstring>(&quot;/home/gokul/catkin_ws/src/face_detection/share/facetracking/haarcascade_frontalface_default.xml&quot;)</argsstring>
+        <name>face_cascade</name>
+        <param>
+          <type>&quot;/home/gokul/catkin_ws/src/face_detection/share/facetracking/haarcascade_frontalface_default.xml&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/gokul/catkin_ws/src/face_detection/src/face_detect.cpp" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="face__detect_8cpp_1aee834d16d4f2f1d2b3aacf53333b2309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imageCallback</definition>
+        <argsstring>(const sensor_msgs::ImageConstPtr &amp;original_image)</argsstring>
+        <name>imageCallback</name>
+        <param>
+          <type>const sensor_msgs::ImageConstPtr &amp;</type>
+          <declname>original_image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/gokul/catkin_ws/src/face_detection/src/face_detect.cpp" line="30" column="1" bodyfile="/home/gokul/catkin_ws/src/face_detection/src/face_detect.cpp" bodystart="30" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="face__detect_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/gokul/catkin_ws/src/face_detection/src/face_detect.cpp" line="90" column="1" bodyfile="/home/gokul/catkin_ws/src/face_detection/src/face_detect.cpp" bodystart="90" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>gets<sp/>the<sp/>image<sp/>from<sp/>the<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/><sp/>processes<sp/>it<sp/>to<sp/>detect<sp/>a<sp/>faces.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>After<sp/>detecting<sp/>face<sp/>it<sp/>draws<sp/>a<sp/>rectangular<sp/>box<sp/>that<sp/>covers<sp/>the<sp/>detected<sp/>face</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>publishes<sp/>the<sp/>image<sp/>as<sp/>rosmessage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/ros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv_bridge/cv_bridge.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sensor_msgs/image_encodings.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;image_transport/image_transport.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/objdetect/objdetect.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/imgproc/imgproc.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/highgui/highgui.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*To<sp/>compile<sp/>this<sp/>execuatble</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*rosrun<sp/>face_detection<sp/>face_detection_detect</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">cv;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">enc<sp/>=<sp/>sensor_msgs::image_encodings;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Declares<sp/>publisher</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="face__detect_8cpp_1aa3018a2730fde05a0032471af5d5dff2" refkind="member"><highlight class="normal">image_transport::Publisher<sp/><ref refid="face__detect_8cpp_1aa3018a2730fde05a0032471af5d5dff2" kindref="member">pub</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>the<sp/>haar<sp/>cascade</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">CascadeClassifier<sp/><ref refid="face__detect_8cpp_1ac44a6f7253ef9bf766726a7f4e4d1076" kindref="member">face_cascade</ref>(</highlight><highlight class="stringliteral">&quot;/home/gokul/catkin_ws/src/face_detection/share/facetracking/haarcascade_frontalface_default.xml&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="face__detect_8cpp_1aee834d16d4f2f1d2b3aacf53333b2309" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="face__detect_8cpp_1aee834d16d4f2f1d2b3aacf53333b2309" kindref="member">imageCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sensor_msgs::ImageConstPtr&amp;<sp/>original_image){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Image<sp/>Pointer<sp/>Declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>cv_bridge::CvImagePtr<sp/>cv_ptr;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//cv_bridge::CvImagePtr<sp/>cv_chg;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Copying<sp/>image<sp/>to<sp/>a<sp/>pointer<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>cv_ptr<sp/>=<sp/>cv_bridge::toCvCopy(original_image,<sp/>enc::BGR8);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(cv_bridge::Exception&amp;<sp/>e){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Excetion<sp/>Display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>ROS_ERROR(</highlight><highlight class="stringliteral">&quot;tutorialROSOpenCV::main.cpp::cv_bridge<sp/>exception:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>e.what());</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>std::vector&lt;Rect&gt;<sp/>faces;<sp/></highlight><highlight class="comment">//vector<sp/>declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>cv::Mat<sp/>frame_gray;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mat<sp/>variable<sp/>for<sp/>storing<sp/>gray<sp/>scale<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>cv::cvtColor(cv_ptr-&gt;image,<sp/>frame_gray,<sp/>CV_BGR2GRAY<sp/>);<sp/></highlight><highlight class="comment">//BGR<sp/>to<sp/>Gray<sp/>image<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>cv::equalizeHist(frame_gray,frame_gray);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Equalize<sp/>Histograms<sp/>the<sp/>fram_gray<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Detect<sp/>faces<sp/>in<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><ref refid="face__detect_8cpp_1ac44a6f7253ef9bf766726a7f4e4d1076" kindref="member">face_cascade</ref>.detectMultiScale(</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>frame_gray,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>faces,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>1.1,<sp/>2,<sp/>0<sp/>|<sp/>CASCADE_SCALE_IMAGE,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>Size(30,<sp/>30)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>face_index<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>face_index<sp/>is<sp/>index<sp/>of<sp/>current<sp/>element</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterate<sp/>through<sp/>all<sp/>current<sp/>elements<sp/>(detected<sp/>faces)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Draws<sp/>rectangle<sp/>on<sp/>each<sp/>detected<sp/>face</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>by<sp/>finding<sp/>the<sp/>vertex<sp/>of<sp/>faces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(face_index<sp/>=<sp/>0;<sp/>face_index<sp/>&lt;<sp/>faces.size();<sp/>face_index++)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Point<sp/>pt1(faces[face_index].x,<sp/>faces[face_index].y);<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Point<sp/>pt2(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(faces[face_index].x<sp/>+<sp/>faces[face_index].height),</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(faces[face_index].y<sp/>+<sp/>faces[face_index].width)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::rectangle(cv_ptr-&gt;image,<sp/>pt1,<sp/>pt2,<sp/>Scalar(0,<sp/>255,<sp/>0),<sp/>2,<sp/>8,<sp/>0);<sp/></highlight><highlight class="comment">//<sp/>draws<sp/>rectangle<sp/>on<sp/>original<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>cv::waitKey(1);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(faces.size()!=0){<sp/></highlight><highlight class="comment">//<sp/>node<sp/>will<sp/>not<sp/>publish<sp/>the<sp/>image<sp/>unless<sp/>it<sp/>detects<sp/>the<sp/>face<sp/>in<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>sensor_msgs::ImagePtr<sp/>msg<sp/>=<sp/>cv_bridge::CvImage(std_msgs::Header(),<sp/></highlight><highlight class="stringliteral">&quot;bgr8&quot;</highlight><highlight class="normal">,<sp/>cv_ptr-&gt;image).toImageMsg();<sp/></highlight><highlight class="comment">//<sp/>store<sp/>image<sp/>as<sp/>rosmessage<sp/>in<sp/>msg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="face__detect_8cpp_1aa3018a2730fde05a0032471af5d5dff2" kindref="member">pub</ref>.publish(msg);<sp/></highlight><highlight class="comment">//<sp/>publishes<sp/>ros<sp/>message<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="face__detect_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="face__detect_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>ros::init(argc,<sp/>argv,<sp/></highlight><highlight class="stringliteral">&quot;face_detect&quot;</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">//<sp/>Intiliazing<sp/>ros<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>ros::NodeHandle<sp/>nh;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>image_transport::ImageTransport<sp/>it(nh);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>image_transport::Subscriber<sp/>sub<sp/>=<sp/>it.subscribe(</highlight><highlight class="stringliteral">&quot;/image&quot;</highlight><highlight class="normal">,<sp/>1,<sp/><ref refid="face__detect_8cpp_1aee834d16d4f2f1d2b3aacf53333b2309" kindref="member">imageCallback</ref>);<sp/></highlight><highlight class="comment">//<sp/>subscribes<sp/>the<sp/>image<sp/>for<sp/>detecting<sp/>face</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="face__detect_8cpp_1aa3018a2730fde05a0032471af5d5dff2" kindref="member">pub</ref><sp/>=<sp/>it.advertise(</highlight><highlight class="stringliteral">&quot;camera/image_processed&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>ros::spin();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>ROS_INFO(</highlight><highlight class="stringliteral">&quot;tutorialROSOpenCV::main.cpp::No<sp/>error.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/gokul/catkin_ws/src/face_detection/src/face_detect.cpp"/>
+  </compounddef>
+</doxygen>

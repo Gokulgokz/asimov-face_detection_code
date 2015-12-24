@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="image__publish_8cpp" kind="file">
+    <compoundname>image_publish.cpp</compoundname>
+    <includes local="no">ros/ros.h</includes>
+    <includes local="no">image_transport/image_transport.h</includes>
+    <includes local="no">opencv2/highgui/highgui.hpp</includes>
+    <includes local="no">opencv2/imgproc/imgproc.hpp</includes>
+    <includes local="no">cv_bridge/cv_bridge.h</includes>
+    <incdepgraph>
+      <node id="44">
+        <label>image_transport/image_transport.h</label>
+      </node>
+      <node id="47">
+        <label>cv_bridge/cv_bridge.h</label>
+      </node>
+      <node id="42">
+        <label>src/image_publish.cpp</label>
+        <link refid="image_publish.cpp"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>opencv2/imgproc/imgproc.hpp</label>
+      </node>
+      <node id="43">
+        <label>ros/ros.h</label>
+      </node>
+      <node id="45">
+        <label>opencv2/highgui/highgui.hpp</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="image__publish_8cpp_1a104ca8735e102aef1fa710454137dbc8" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float kScaleFactor</definition>
+        <argsstring></argsstring>
+        <name>kScaleFactor</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/gokul/catkin_ws/src/face_detection/src/image_publish.cpp" line="15" column="1" bodyfile="/home/gokul/catkin_ws/src/face_detection/src/image_publish.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="image__publish_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/gokul/catkin_ws/src/face_detection/src/image_publish.cpp" line="17" column="1" bodyfile="/home/gokul/catkin_ws/src/face_detection/src/image_publish.cpp" bodystart="17" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>This<sp/>file<sp/>publishes<sp/>the<sp/>image<sp/>as<sp/>ros<sp/>message<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>other<sp/>nodes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>image<sp/>path<sp/>has<sp/>to<sp/>be<sp/>provide<sp/>while<sp/>executing<sp/>thi<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ros/ros.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;image_transport/image_transport.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/highgui/highgui.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/imgproc/imgproc.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv_bridge/cv_bridge.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*To<sp/>compile<sp/>this<sp/>execuatble</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*rosrun<sp/>face_detection<sp/>face_detection_image<sp/>src/opencvtut/src/lena.jpg</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="image__publish_8cpp_1a104ca8735e102aef1fa710454137dbc8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="image__publish_8cpp_1a104ca8735e102aef1fa710454137dbc8" kindref="member">kScaleFactor</ref><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="image__publish_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="image__publish_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>ros::init(argc,<sp/>argv,<sp/></highlight><highlight class="stringliteral">&quot;image_publisher&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>ros::NodeHandle<sp/>nh;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>image_transport::ImageTransport<sp/>it(nh);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>image_transport::Publisher<sp/><ref refid="face__detect_8cpp_1aa3018a2730fde05a0032471af5d5dff2" kindref="member">pub</ref><sp/>=<sp/>it.advertise(</highlight><highlight class="stringliteral">&quot;/image&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>cv::Mat<sp/>image<sp/>=<sp/>cv::imread(argv[1],<sp/>CV_LOAD_IMAGE_COLOR);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>cv::Mat<sp/>new_image;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>cv::Mat<sp/>gray_image,<sp/>threshold_image;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>cv::cvtColor(image,<sp/>gray_image,<sp/>CV_BGR2GRAY);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>cv::threshold(gray_image,<sp/>threshold_image,<sp/>200,<sp/>255,<sp/>CV_THRESH_BINARY_INV);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>new_image<sp/>=<sp/>threshold_image;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>dst,<sp/>map_x<sp/>and<sp/>map_y<sp/>with<sp/>the<sp/>same<sp/>size<sp/>as<sp/>src:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>cv::resize(image,<sp/>new_image,<sp/>cvSize(0,<sp/>0),<sp/><ref refid="image__publish_8cpp_1a104ca8735e102aef1fa710454137dbc8" kindref="member">kScaleFactor</ref>,<sp/><ref refid="image__publish_8cpp_1a104ca8735e102aef1fa710454137dbc8" kindref="member">kScaleFactor</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>cv::waitKey(30);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>sensor_msgs::ImagePtr<sp/>msg<sp/>=<sp/>cv_bridge::CvImage(std_msgs::Header(),<sp/></highlight><highlight class="stringliteral">&quot;bgr8&quot;</highlight><highlight class="normal">,<sp/>new_image).toImageMsg();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>ros::Rate<sp/>loop_rate(5);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(nh.ok())<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>pub.publish(msg);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ros::spinOnce();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>loop_rate.sleep();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/gokul/catkin_ws/src/face_detection/src/image_publish.cpp"/>
+  </compounddef>
+</doxygen>

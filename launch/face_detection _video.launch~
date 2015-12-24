@@ -1,0 +1,11 @@
+<launch>
+
+  <group> ns="face_detection">
+    
+    <node pkg="face_detection" name="video" type="face_detection_video" args="$0" />
+    <node pkg="face_detection" name="detect" type="face_detection_detect"/>
+    <node pkg="face_detection" name="imagesubscribe" type="face_detection_imagesubscribe"/>
+  </group>
+
+</launch>
+

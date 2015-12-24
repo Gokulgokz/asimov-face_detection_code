@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#ac44a6f7253ef9bf766726a7f4e4d1076"><param name="Name" value="face_cascade"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html"><param name="Name" value="face_detect.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#ac44a6f7253ef9bf766726a7f4e4d1076"><param name="Name" value="face_cascade"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#aee834d16d4f2f1d2b3aacf53333b2309"><param name="Name" value="imageCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#aa3018a2730fde05a0032471af5d5dff2"><param name="Name" value="pub"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="image__publish_8cpp.html"><param name="Name" value="image_publish.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="image__publish_8cpp.html#a104ca8735e102aef1fa710454137dbc8"><param name="Name" value="kScaleFactor"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="image__publish_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="main"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#aee834d16d4f2f1d2b3aacf53333b2309"><param name="Name" value="imageCallback"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#aee834d16d4f2f1d2b3aacf53333b2309"><param name="Name" value="face_detect.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="imgsubcriber_8cpp.html#a0d7dfd9133ce1e6b48bfdc8249db33d1"><param name="Name" value="imgsubcriber.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="imgsubcriber_8cpp.html"><param name="Name" value="imgsubcriber.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="imgsubcriber_8cpp.html#a0d7dfd9133ce1e6b48bfdc8249db33d1"><param name="Name" value="imageCallback"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="imgsubcriber_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="main"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="image__publish_8cpp.html#a104ca8735e102aef1fa710454137dbc8"><param name="Name" value="kScaleFactor"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="main"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="face_detect.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="image__publish_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="image_publish.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="imgsubcriber_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="imgsubcriber.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="webcam__video__show_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="webcam_video_show.cpp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="face__detect_8cpp.html#aa3018a2730fde05a0032471af5d5dff2"><param name="Name" value="pub"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="webcam__video__show_8cpp.html"><param name="Name" value="webcam_video_show.cpp"></OBJECT>
+</UL>
+</BODY>
+</HTML>

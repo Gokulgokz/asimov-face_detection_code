@@ -1,0 +1,68 @@
+.TH "src/face_detect.cpp" 3 "Wed Dec 23 2015" "Face_detection" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/face_detect.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <ros/ros\&.h>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <cv_bridge/cv_bridge\&.h>\fP
+.br
+\fC#include <sensor_msgs/image_encodings\&.h>\fP
+.br
+\fC#include <image_transport/image_transport\&.h>\fP
+.br
+\fC#include <opencv2/objdetect/objdetect\&.hpp>\fP
+.br
+\fC#include <opencv2/imgproc/imgproc\&.hpp>\fP
+.br
+\fC#include <opencv2/highgui/highgui\&.hpp>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "CascadeClassifier \fBface_cascade\fP ('/home/gokul/catkin_ws/src/face_detection/share/facetracking/haarcascade_frontalface_default\&.xml')"
+.br
+.ti -1c
+.RI "void \fBimageCallback\fP (const sensor_msgs::ImageConstPtr &original_image)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "image_transport::Publisher \fBpub\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "CascadeClassifier face_cascade ('/home/gokul/catkin_ws/src/face_detection/share/facetracking/haarcascade_frontalface_default\&.xml')"
+
+.SS "void imageCallback (const sensor_msgs::ImageConstPtr &original_image)"
+
+.PP
+Definition at line 30 of file face_detect\&.cpp\&.
+.SS "int main (intargc, char **argv)"
+
+.PP
+Definition at line 90 of file face_detect\&.cpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "image_transport::Publisher pub"
+
+.PP
+Definition at line 25 of file face_detect\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Face_detection from the source code\&.
